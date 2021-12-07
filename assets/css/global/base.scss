@@ -1,0 +1,53 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #fff;
+    margin: 0;
+    overflow-x: hidden;
+    padding: 0;
+    position: relative;
+}
+
+.wrapper {
+    margin: auto;
+    max-width: 900px;
+    position: relative;
+}
+
+.flex {
+    &--st {
+        display: flex;
+        justify-content: flex-start;
+    }
+    
+    &--sb {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.show-desk {
+    display: block;
+    
+    @include MQ($XL) {
+        display: none;
+    }
+}
+
+.show-tablet {
+    display: none;
+    
+    @include MQ($XL) {
+        display: block;
+    }
+}
+
+.show-mobile {
+    display: none;
+    
+    @include MQ($S) {
+        display: block;
+    }
+}

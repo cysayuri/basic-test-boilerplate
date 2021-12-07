@@ -1,4 +1,5 @@
-body {
-    font-family: "Montserrat", sans-serif;
-    background-color: green;
-}
+@import './assets/css/global/variables.scss';
+@import './assets/css/global/base.scss';
+@import './assets/css/global/button.scss';
+
+@import './assets/css/page.scss';

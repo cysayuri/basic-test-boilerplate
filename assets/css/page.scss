@@ -1,0 +1,84 @@
+.banner {
+    background: $tertiary;
+    height: 500px;
+    position: relative;
+    
+    &::before {
+        background: url(./assets/images/hero/desktop/left-leaves.png) no-repeat;
+        background-size: contain;
+        content: '';
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 860px;
+        z-index: 0;
+    }
+    
+    &::after {
+        background: url(./assets/images/hero/desktop/right-leaves.png) no-repeat;
+        background-size: contain;
+        content: '';
+        height: 100%;
+        right: 0;
+        position: absolute;
+        top: 0;
+        width: 360px;
+        z-index: 1;
+    }
+    
+    &__content {
+        align-items: center;
+        height: 100%;
+        z-index: 1;
+    }
+    
+    &__desc {
+        width: 45%;
+        
+        a img {
+            animation-name: scrollAnimation;
+            animation-iteration-count: 5;
+            animation-duration: 3s;
+            bottom: 70px;
+            height: 35px;
+            object-fit: contain;
+            position: absolute;
+            transition: opacity .5s ease-in-out;
+            width: 40px;
+
+            &:hover {
+                opacity: .5;
+            }
+        }
+        
+        h1 {
+            color: #fff;
+            font-family: $font-bold;
+            font-size: 70px;
+            line-height: 1.2em;
+            margin: 35px 0 80px;
+        }
+    }  
+        
+    &__logo {
+        height: 25px;
+        margin: 0;
+        width: 210px;
+    }
+        
+    &__img {
+        height: 430px;
+        object-fit: contain;
+        width: 335px;
+    }
+}
+
+
+@keyframes scrollAnimation {
+    0%   {bottom: 70px;}
+    25%  {bottom: 50px;}
+    50%  {bottom: 70px;}
+    75%  {bottom: 50px;}
+    100% {bottom: 70px;}
+}

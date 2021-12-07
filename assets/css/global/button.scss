@@ -1,0 +1,44 @@
+.btn {
+    background: transparent;
+    border: 1px solid $primary;
+    border-radius: 25px;
+    color: $primary;
+    display: inline-block;
+    font-family: $font-light;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0;
+    min-width: 115px;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    transition: all .5s ease-in-out;
+    width: fit-content;
+    
+    &:hover {
+        background: $primary;
+        color: #fff;
+    }
+    
+    &--icon {
+        padding: 15px 5px 15px 25px;
+        position: relative;
+        
+        &:after {
+            background: url(./assets/images/icons/btn-arrow.svg) no-repeat;
+            background-size: contain;
+            content: '';
+            height: 18px;
+            left: 35px;
+            position: absolute;
+            transform: translateY(-50%);
+            transition: filter .5s ease-in-out;
+            top: 50%;
+            width: 18px;
+        }
+
+        &:hover:after {
+            filter: grayscale(3) brightness(5);
+        }
+    }
+}

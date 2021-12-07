@@ -1,0 +1,37 @@
+/* ___ Fonts ___ */
+@font-face {
+    font-family: 'Montserrat Regular';
+    src: url(./assets/fonts/Montserrat-Regular.ttf);
+}
+@font-face {
+    font-family: 'Montserrat Light';
+    src: url(./assets/fonts/Montserrat-Light.ttf);
+}
+@font-face {
+    font-family: 'Montserrat Bold';
+    src: url(./assets/fonts/Montserrat-Bold.ttf);
+}
+
+$font-regular: 'Montserrat Regular', 'Calibri', 'sans-serif';
+$font-light: 'Montserrat Light', 'Calibri', 'sans-serif';
+$font-bold: 'Montserrat Bold', 'Calibri', 'sans-serif';
+
+
+/* ___ Colors ___ */
+$primary: #15573F;
+$secondary: #FD9872;
+$tertiary: #75BC97;
+
+
+/* ___ Media Query ___ */
+@mixin MQ($size) {
+    @media screen and (max-width: $size) {
+        @content;
+    }
+}
+
+$XS: 500px;
+$S: 758px;
+$M: 960px;
+$L: 1024px;
+$XL: 1130px;
