@@ -20,7 +20,51 @@
     </div>
   </section>
   
+  <section id="filter" class="filter wrapper flex--sb">
+    <div class="filter__item">
+      <img src="./assets/images/illustrations/sun.png" alt="Sunlight" title="Sunlight">
+      <p><b>1.</b> Set the amount of <b>sunlight</b> your plant will get.</p>
+      
+      <div class="filter__item-select">
+        <select name="sun" id="sun">
+          <option selected disabled>Select...</option>
+          <option value="no">No</option>
+          <option value="low">Low</option>
+          <option value="high">High</option>
+        </select>
+      </div>
+    </div>
+    
+    <div class="filter__item">
+      <img src="./assets/images/illustrations/wateringcan.png" alt="Watering can" title="Watering can">
+      <p><b>2.</b> How often do you want to <b>water</b> your plant?</p>
+      
+      <div class="filter__item-select">
+        <select name="water" id="water">
+          <option selected disabled>Select...</option>
+          <option value="regularly">Regularly</option>
+          <option value="daily">Daily</option>
+          <option value="rarely">Rarely</option>
+        </select>
+      </div>
+    </div>
+    
+    <div class="filter__item">
+      <img src="./assets/images/illustrations/dog.png" alt="Pets" title="Pets">
+      <p><b>3.</b> Do you have pets? Do they <b>chew</b> plants?</p>
+      
+      <div class="filter__item-select">
+        <select name="pet" id="pet">
+          <option selected disabled>Select...</option>
+          <option value="true">Yes</option>
+          <option value="false">No</option>
+        </select>
+      </div>
+    </div>
+  </section>
   <!-- <a href="" class="btn">label</a>
   <a href="" class="btn btn--icon">label</a> -->
+  
+  <script src="./assets/js/filter.js"></script>
 </body>
 </html>
